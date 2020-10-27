@@ -1,0 +1,83 @@
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Boogaloo&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+		<title>Html Code Runner</title>
+		<link rel="stylesheet" href="style.css">
+		<script src="app.js"></script>
+		<script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+	</head>
+	<body>
+		<!--Home Screen -->
+		<section id="home">
+			<!-- Logo Image -->
+			<center>
+			<img src="https://dl.dropbox.com/s/7syetkj09zaax38/1603727179280.png" alt="logo" class="logo">
+				
+			<!-- Start Button -->
+	  <button class="custom-btn btn-12" onclick="start()"><span>Click !</span><span>Start</span></button>
+			</center>
+		</section>
+		
+		<!-- Main Screen -->
+		<section id="main">
+			<!-- Title Bar -->
+			<input class="input" id="inputFileNameToSaveAs" placeholder=" Enter Name"><br>
+				<br>
+			<!-- Text Area -->
+			<textarea id="code" placeholder=" Write Your Code Here" style="width:100%;height:50%;"></textarea><br>
+		<br>
+			<!-- Buttons -->
+			<button class="run" onclick="run()">Run</button>
+			<button class="copy" onclick="copy()">Copy</button>
+	  <button class="share"><a id="whatsapp_link" rel="nofollow noopener" target="_blank" onclick="new_share()" style="text-decoration:none;">Share</a></button>
+	  <button class="down" onclick="saveTextAsFile()">Download</button><br><br>
+	  <button class="help" onclick="show()">Help?</button><br>
+	  	<br>
+	  <button class="about" onclick="about()"><ion-icon name="person-circle-outline"></ion-icon></button>
+	  <button class="chat_r" onclick="chatr()">Chat Room</button><br>
+	 <!-- Footer -->   
+	<footer>
+	<div	class="copyright" align="center">
+  <script>
+    document.write('&copy;' );
+    document.write(' 2020 - ');
+    document.write(new Date().getFullYear());
+    document.write(' Amit Gajare - All Rights Reserved.');
+      </script>
+    </div>
+	</footer>
+		</section>
+			<!-- Iframe -->
+		<div id="ifr">
+	<button id="back" onclick="back()">Back</button>
+	<hr class="style-seven">
+			<iframe id="out" style="width:100%;height:100%;border:none;outline:none;"></iframe>
+		</div>
+		<!-- About Page -->
+		<div id="about">
+			 <button class="back_2" onclick="backf()">Back</button>
+			 <br>
+			<center>
+			<img src="https://dl.dropbox.com/s/ygmg0w6kagyo327/%E2%80%94Pngtree%E2%80%94talk%20about%20team%20decoration%20illustration_4562197.png" alt="about" class="img_2">
+			</center>
+			<blockquote>
+				Hello My Name Is Amit Gajare, Form Yawal MH. i'm a Web Designer
+			</blockquote>
+			<h3>My Knowledge</h3>
+			<p>Html, css, JavaScript, React, Bash-Shell, Python
+     etc...</p><br><br>
+     <center>
+     	<a href="https://www.instagram.com/amitgajare_/" class="icon">Instagram</a> |
+     	<a href="https://codepen.io/AmitGajare" class="icon">Codepen</a> |
+     <a href="https://github.com/Amitgajare2" class="icon">Github</a> |
+     <a href="https://in.pinterest.com/Amitgajare_/" class="icon">Pinterest</a>
+     </center>
+     <br>
+		</div>
+	
+	
+	</body>
+</html>
